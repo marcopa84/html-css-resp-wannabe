@@ -66,6 +66,43 @@ img{
   clear:both;
 }
 /* REGOLR RESPONSIVE */
+@media screen and (min-widt:420px) and (max-width:780px){
+  body{
+    font-size: 30px;
+  }
+  .row{
+    background-color: pink;
+  }
+  #lezioni .row > .left{
+    background-color: blue;
+  }
+  #lezioni .row > .right{
+    background-color: red;
+  }
+  #steps .row > .left{
+    background-color: blue;
+  }
+  #steps .row > .central{
+    background-color: green;
+  }
+  #steps .row > .right{
+    background-color: red;
+  }
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third {
+    float: left;
+    width: 29%;
+    margin: 0 2%;
+    background-color: pink;
+  }
+
+  #why:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
 
 @media screen and (max-width:420px) {
   body{
@@ -77,8 +114,8 @@ img{
   }
   #lezioni .row > .left,
   #lezioni .row > .right{
-    width: 100%;
     float: none;
+    width: 100%;
     margin: 50px 0;
   }
   #steps .row > .left,
